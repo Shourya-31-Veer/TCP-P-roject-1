@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – Nirman (Placeholder)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container flex between center-y">
+      <a href="index.html" class="logo"><span class="logo-mark">N</span> <span class="logo-text">Nirman</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav id="primary-nav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a class="btn btn-sm btn-accent" href="#enquiry">Enquire</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero small">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section" id="enquiry">
+      <div class="container grid cols-2-sm-1 gap-xl">
+        <div>
+          <h2>Reach Out</h2>
+          <p>Placeholder instructions about how prospective residents can enquire.</p>
+          <ul class="contact-list">
+            <li><strong>Sales:</strong> <a href="tel:+910000000000">+91 00000 00000</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></li>
+            <li><strong>Office:</strong> 123 Placeholder Street, City</li>
+          </ul>
+          <div class="map-box ratio-16x9 mt-m">
+            <!-- Replace with embed if needed -->
+            <iframe title="Location Map" loading="lazy"
+              src="https://maps.google.com/maps?q=india&t=&z=5&ie=UTF8&iwloc=&output=embed"></iframe>
+          </div>
+        </div>
+        <form class="contact-form shadow-sm" id="contact-form" novalidate>
+          <h3 class="form-title">Enquiry Form</h3>
+          <div class="form-group">
+            <label for="c-name">Full Name</label>
+            <input id="c-name" name="name" required />
+            <span class="error-msg" data-error-for="c-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" required />
+            <span class="error-msg" data-error-for="c-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="c-phone">Phone</label>
+            <input id="c-phone" name="phone" pattern="^[0-9\\-\\+ ]{7,15}$" />
+            <span class="error-msg" data-error-for="c-phone"></span>
+          </div>
+          <div class="form-group">
+            <label for="c-type">Interest</label>
+            <select id="c-type" name="interest">
+              <option value="">Select...</option>
+              <option>2 BHK</option>
+              <option>3 BHK</option>
+              <option>Duplex</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="c-msg">Message</label>
+            <textarea id="c-msg" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Submit</button>
+          <p class="form-status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container flex between center-y wrap gap-s">
+      <p>&copy; <span id="year"></span> Nirman (Placeholder).</p>
+      <p class="small">Recreated frontend scaffold.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
